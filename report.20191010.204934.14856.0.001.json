@@ -1,0 +1,587 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191010.204934.14856.0.001.json",
+    "dumpEventTime": "2019-10-10T20:49:34Z",
+    "dumpEventTimeStamp": "1570765774779",
+    "processId": 14856,
+    "cwd": "/Users/clifford/bloc_projects/moviedex-api",
+    "commandLine": [
+      "node",
+      "server.js"
+    ],
+    "nodejsVersion": "v12.10.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "12.10.0",
+      "v8": "7.6.303.29-node.16",
+      "uv": "1.31.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.10.0/node-v12.10.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.10.0/node-v12.10.0.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "18.7.0",
+    "osVersion": "Darwin Kernel Version 18.7.0: Tue Aug 20 16:57:14 PDT 2019; root:xnu-4903.271.2~2/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 10560680,
+        "nice": 0,
+        "sys": 7985270,
+        "idle": 62923950,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 1078000,
+        "nice": 0,
+        "sys": 890070,
+        "idle": 79473390,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 9611920,
+        "nice": 0,
+        "sys": 5296540,
+        "idle": 66535880,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 1082050,
+        "nice": 0,
+        "sys": 736070,
+        "idle": 79622850,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 8159680,
+        "nice": 0,
+        "sys": 3974810,
+        "idle": 69308600,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 1101170,
+        "nice": 0,
+        "sys": 663030,
+        "idle": 79676290,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 7118780,
+        "nice": 0,
+        "sys": 3157450,
+        "idle": 71165740,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 1130350,
+        "nice": 0,
+        "sys": 605340,
+        "idle": 79704320,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "80:e6:50:00:19:86",
+        "address": "fe80::4ee:400c:873c:e96d",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 5
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "80:e6:50:00:19:86",
+        "address": "192.168.86.233",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "awdl0",
+        "internal": false,
+        "mac": "f2:71:79:f1:8e:85",
+        "address": "fe80::f071:79ff:fef1:8e85",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 7
+      },
+      {
+        "name": "utun0",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::2500:45ad:b119:4237",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      },
+      {
+        "name": "utun1",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::c104:66f6:99e5:ff46",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      }
+    ],
+    "host": "cliff-macbook.lan"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x000000010014a876",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::String>) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x000000010007a41b",
+      "symbol": "node::OnFatalError(char const*, char const*) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x000000010016e833",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x000000010016e7de",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100284ddb",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100268d73",
+      "symbol": "v8::internal::Factory::AllocateRawFixedArray(int, v8::internal::AllocationType) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100267f44",
+      "symbol": "v8::internal::Factory::NewFixedArrayWithFiller(v8::internal::RootIndex, int, v8::internal::Object, v8::internal::AllocationType) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100365b89",
+      "symbol": "v8::internal::(anonymous namespace)::ElementsAccessorBase<v8::internal::(anonymous namespace)::FastPackedObjectElementsAccessor, v8::internal::(anonymous namespace)::ElementsKindTraits<(v8::internal::ElementsKind)2> >::ConvertElementsWithCapacity(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::FixedArrayBase>, v8::internal::ElementsKind, unsigned int, unsigned int, unsigned int, int) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x000000010036482e",
+      "symbol": "v8::internal::(anonymous namespace)::ElementsAccessorBase<v8::internal::(anonymous namespace)::FastPackedObjectElementsAccessor, v8::internal::(anonymous namespace)::ElementsKindTraits<(v8::internal::ElementsKind)2> >::GrowCapacity(v8::internal::Handle<v8::internal::JSObject>, unsigned int) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100486525",
+      "symbol": "v8::internal::Runtime_GrowArrayElements(int, unsigned long*, v8::internal::Isolate*) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100717ef9",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x000024c8d72c9843",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000000010068fe9c",
+      "symbol": "Builtins_ArgumentsAdaptorTrampoline [/usr/local/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 991989760,
+    "totalCommittedMemory": 991164688,
+    "usedMemory": 966600936,
+    "availableMemory": 1228924544,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 31744,
+        "capacity": 261832,
+        "used": 31432,
+        "available": 230400
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33553408,
+        "capacity": 16757248,
+        "used": 10645888,
+        "available": 6111360
+      },
+      "old_space": {
+        "memorySize": 5091328,
+        "committedMemory": 4804472,
+        "capacity": 3393264,
+        "used": 3393264,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 196960,
+        "capacity": 161280,
+        "used": 161280,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 528384,
+        "committedMemory": 450616,
+        "capacity": 296400,
+        "used": 296400,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 952078336,
+        "committedMemory": 952078336,
+        "capacity": 952069216,
+        "used": 952069216,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16757248,
+        "used": 0,
+        "available": 16757248
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 7.89229,
+    "kernelCpuSeconds": 0.97044,
+    "cpuConsumptionPercent": 59.0849,
+    "maxRss": 1684319240192,
+    "pageFaults": {
+      "IORequired": 0,
+      "IONotRequired": 713325
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "npm_config_save_dev": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_dry_run": "",
+    "npm_config_viewer": "man",
+    "npm_config_only": "",
+    "npm_config_commit_hooks": "true",
+    "npm_config_browser": "",
+    "npm_package_gitHead": "c5bf8572d85f9ce9b3568d2b2d7a10b5303c0d25",
+    "npm_config_also": "",
+    "npm_config_sign_git_commit": "",
+    "npm_config_rollback": "true",
+    "TERM_PROGRAM": "vscode",
+    "NODE": "/usr/local/Cellar/node/12.10.0/bin/node",
+    "npm_config_usage": "",
+    "npm_config_audit": "true",
+    "INIT_CWD": "/Users/clifford/bloc_projects/moviedex-api",
+    "npm_config_globalignorefile": "/usr/local/etc/npmignore",
+    "SHELL": "/bin/bash",
+    "TERM": "xterm-256color",
+    "npm_config_shell": "/bin/bash",
+    "npm_config_maxsockets": "50",
+    "npm_config_init_author_url": "",
+    "npm_config_shrinkwrap": "true",
+    "npm_config_parseable": "",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "TMPDIR": "/var/folders/09/vrj71hm17wx2fnlnvfy4fkrc0000gp/T/",
+    "npm_config_timing": "",
+    "npm_config_init_license": "ISC",
+    "Apple_PubSub_Socket_Render": "/private/tmp/com.apple.launchd.UBnd7sIKmf/Render",
+    "npm_config_if_present": "",
+    "TERM_PROGRAM_VERSION": "1.36.1",
+    "npm_package_scripts_dev": "nodemon server.js",
+    "npm_config_sign_git_tag": "",
+    "npm_config_init_author_email": "",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_preid": "",
+    "npm_config_long": "",
+    "npm_config_local_address": "",
+    "npm_config_git_tag_version": "true",
+    "npm_config_cert": "",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_noproxy": "",
+    "npm_config_fetch_retries": "2",
+    "npm_config_versions": "",
+    "npm_config_message": "%s",
+    "npm_config_key": "",
+    "npm_package_description": "",
+    "USER": "clifford",
+    "npm_package_license": "ISC",
+    "npm_config_globalconfig": "/usr/local/etc/npmrc",
+    "npm_config_prefer_online": "",
+    "npm_config_logs_max": "10",
+    "npm_config_always_auth": "",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.KXRwqfqvZZ/Listeners",
+    "__CF_USER_TEXT_ENCODING": "0x1F6:0x0:0x0",
+    "npm_execpath": "/usr/local/lib/node_modules/npm/bin/npm-cli.js",
+    "npm_config_global_style": "",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_update_notifier": "true",
+    "npm_config_cafile": "",
+    "npm_config_heading": "npm",
+    "npm_config_audit_level": "low",
+    "npm_config_searchlimit": "20",
+    "npm_config_read_only": "",
+    "npm_config_offline": "",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "npm_config_json": "",
+    "npm_config_access": "",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"start\"],\"original\":[\"start\"]}",
+    "PATH": "/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/clifford/bloc_projects/moviedex-api/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands",
+    "npm_config_allow_same_version": "",
+    "npm_config_https_proxy": "",
+    "npm_config_engine_strict": "",
+    "npm_config_description": "true",
+    "_": "/usr/local/bin/node",
+    "npm_config_userconfig": "/Users/clifford/.npmrc",
+    "npm_config_init_module": "/Users/clifford/.npm-init.js",
+    "npm_package_author": "",
+    "npm_config_cidr": "",
+    "PWD": "/Users/clifford/bloc_projects/moviedex-api",
+    "npm_config_user": "",
+    "npm_config_node_version": "12.10.0",
+    "npm_lifecycle_event": "start",
+    "npm_config_save": "true",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_editor": "vi",
+    "npm_config_auth_type": "legacy",
+    "npm_package_name": "moviedex-api",
+    "LANG": "en_US.UTF-8",
+    "npm_config_tag": "latest",
+    "npm_config_script_shell": "",
+    "npm_config_progress": "true",
+    "npm_config_global": "",
+    "npm_config_before": "",
+    "npm_package_scripts_start": "node server.js",
+    "npm_config_searchstaleness": "900",
+    "npm_config_optional": "true",
+    "npm_config_ham_it_up": "",
+    "XPC_FLAGS": "0x0",
+    "npm_config_save_prod": "",
+    "npm_config_force": "",
+    "npm_config_bin_links": "true",
+    "npm_config_searchopts": "",
+    "npm_config_node_gyp": "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "npm_config_depth": "Infinity",
+    "npm_package_main": "index.js",
+    "npm_config_sso_poll_frequency": "500",
+    "npm_config_rebuild_bundle": "true",
+    "npm_package_version": "1.0.0",
+    "XPC_SERVICE_NAME": "0",
+    "npm_config_unicode": "true",
+    "HOME": "/Users/clifford",
+    "SHLVL": "3",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_config_tag_version_prefix": "v",
+    "npm_config_strict_ssl": "true",
+    "npm_config_sso_type": "oauth",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "npm_config_save_prefix": "^",
+    "npm_config_loglevel": "notice",
+    "npm_config_ca": "",
+    "npm_package_dependencies_dotenv": "^8.1.0",
+    "npm_config_save_exact": "",
+    "npm_config_group": "20",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_dev": "",
+    "npm_config_version": "",
+    "npm_config_prefer_offline": "",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_otp": "",
+    "npm_config_cache_min": "10",
+    "npm_config_searchexclude": "",
+    "npm_config_cache": "/Users/clifford/.npm",
+    "LOGNAME": "clifford",
+    "npm_lifecycle_script": "node server.js",
+    "npm_config_color": "true",
+    "npm_config_proxy": "",
+    "npm_config_package_lock": "true",
+    "npm_config_package_lock_only": "",
+    "npm_package_dependencies_env": "0.0.2",
+    "npm_config_save_optional": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_user_agent": "npm/6.11.3 node/v12.10.0 darwin x64",
+    "npm_config_cache_lock_wait": "10000",
+    "npm_config_production": "",
+    "npm_config_send_metrics": "",
+    "npm_config_save_bundle": "",
+    "npm_config_umask": "0022",
+    "npm_config_node_options": "",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_init_author_name": "",
+    "npm_config_git": "git",
+    "npm_config_scope": "",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_tmp": "/var/folders/09/vrj71hm17wx2fnlnvfy4fkrc0000gp/T",
+    "npm_config_onload_script": "",
+    "npm_package_devDependencies_nodemon": "^1.19.3",
+    "npm_node_execpath": "/usr/local/Cellar/node/12.10.0/bin/node",
+    "npm_config_link": "",
+    "npm_config_prefix": "/usr/local"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 24576,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 1418,
+      "hard": 2128
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/usr/local/bin/node",
+    "/usr/local/opt/icu4c/lib/libicui18n.64.dylib",
+    "/usr/local/opt/icu4c/lib/libicuuc.64.dylib",
+    "/usr/local/opt/icu4c/lib/libicudata.64.dylib",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_darwin.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_symptoms.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/libDiagnosticMessagesClient.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/usr/lib/libz.1.dylib"
+  ]
+}

@@ -1,29 +1,30 @@
 {
   "name": "moviedex-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server"
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js"
   },
-  "author": "",
+  "keywords": [],
+  "author": "Queen",
   "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.1.0",
-    "express": "^4.17.1",
-    "helmet": "^3.21.1",
-    "morgan": "^1.9.1",
-    "nodemon": "^1.19.3"
+    "env": "0.0.2",
+    "helmet": "^3.21.1"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/QueenShabazz/moviedex-api.git"
+    "url": "git+https://github.com/clipqq/moviedex-api.git"
   },
   "bugs": {
-    "url": "https://github.com/QueenShabazz/moviedex-api/issues"
+    "url": "https://github.com/clipqq/moviedex-api/issues"
   },
-  "homepage": "https://github.com/QueenShabazz/moviedex-api#readme"
+  "homepage": "https://github.com/clipqq/moviedex-api#readme",
+  "description": ""
 }
